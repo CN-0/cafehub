@@ -1,0 +1,96 @@
+.contactus{
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  margin-bottom: 15px;
+}
+.contact-left{
+  width: 50%;
+}
+
+.contact-heading{
+  text-align: center;
+  margin-bottom: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.svg-icon{
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.address-grid{
+  margin-top: 5px;
+}
+.address-grid h4,.contact-form h4,.map h4{
+	color: #141414;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+.address-grid ul{
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+.address-grid ul li{
+    display: block;
+    color: #272727;
+    font-size: .9em;
+    margin-bottom: 1.5em;
+}
+.address-grid ul li a{
+	color:#292828;
+	text-decoration:none;
+}
+.contact-form{
+	margin:40px 0 0 0;
+}
+.contact-form h4{
+	margin-bottom:20px;
+}
+
+.form-group{
+  width: 420px;
+}
+.map{
+  width: 50%;
+}
+.map-grid{
+  margin:2em 0 0 0;
+}
+.map-grid iframe{
+    width: 100%;
+    height: 600px;
+    border: 0;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+
+@media (max-width: 1000px) {
+  .contactus{
+    flex-direction: column;
+    height: unset;
+  }
+  .contact-left, .map{
+    width: 100%;
+  }
+  .form-group{
+    width: 600px;
+  }
+  .map-grid{
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .form-group{
+    width: 420px;
+  }
+}
+@media (max-width: 450px) {
+  .form-group{
+    width: 350px;
+  }
+}
